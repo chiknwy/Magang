@@ -48,13 +48,13 @@
         id="home"
         class="bg-gray-800 rounded-lg shadow-lg p-8 flex flex-col lg:flex-row items-center gap-8"
       >
-        <!-- Foto placeholder utama -->
-        <div class="w-full lg:w-1/3">
+        <!-- Foto portrait friendly -->
+        <div class="w-full lg:w-1/3 bg-gray-950 rounded-lg flex items-center justify-center p-4">
           <!-- Ganti nama file sesuai isi repo kamu -->
           <img
-            src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-hero.jpg"
+            src="/img/img1.jpg"
             alt="Magang photo placeholder"
-            class="w-full h-auto rounded-lg border border-gray-700"
+            class="h-80 object-contain"
           />
         </div>
 
@@ -107,11 +107,13 @@
 
           <!-- RINGKASAN 1 - Terminasi dan Pengecekan Kabel -->
           <article class="bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col">
-            <img
-              src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-terminasi.jpg"
-              alt="Foto terminasi kabel"
-              class="w-full h-40 object-cover rounded-t-lg"
-            />
+            <div class="w-full h-64 bg-gray-950 flex items-center justify-center overflow-hidden rounded-t-lg">
+              <img
+                src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-terminasi.jpg"
+                alt="Foto terminasi kabel"
+                class="h-full object-contain"
+              />
+            </div>
             <div class="p-5 flex flex-col flex-1">
               <h3 class="text-lg font-semibold text-blue-300">
                 Terminasi Kabel dan Pengecekan LAN Tester
@@ -137,11 +139,13 @@
 
           <!-- RINGKASAN 2 - Port Mapping dan Labeling -->
           <article class="bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col">
-            <img
-              src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-portmapping.jpg"
-              alt="Foto port mapping"
-              class="w-full h-40 object-cover rounded-t-lg"
-            />
+            <div class="w-full h-64 bg-gray-950 flex items-center justify-center overflow-hidden rounded-t-lg">
+              <img
+                src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-portmapping.jpg"
+                alt="Foto port mapping"
+                class="h-full object-contain"
+              />
+            </div>
             <div class="p-5 flex flex-col flex-1">
               <h3 class="text-lg font-semibold text-blue-300">
                 Port Mapping dan Penyesuaian Titik Data
@@ -167,11 +171,13 @@
 
           <!-- RINGKASAN 3 - Pemasangan AP dan Konfigurasi Dasar -->
           <article class="bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col">
-            <img
-              src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-ap.jpg"
-              alt="Foto pemasangan access point"
-              class="w-full h-40 object-cover rounded-t-lg"
-            />
+            <div class="w-full h-64 bg-gray-950 flex items-center justify-center overflow-hidden rounded-t-lg">
+              <img
+                src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-ap.jpg"
+                alt="Foto pemasangan access point"
+                class="h-full object-contain"
+              />
+            </div>
             <div class="p-5 flex flex-col flex-1">
               <h3 class="text-lg font-semibold text-blue-300">
                 Pemasangan Access Point dan Pengujian Koneksi
@@ -197,11 +203,13 @@
 
           <!-- RINGKASAN 4 - Fiber Optic dan Splicing -->
           <article class="bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col">
-            <img
-              src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-fo.jpg"
-              alt="Foto fiber optic splicing"
-              class="w-full h-40 object-cover rounded-t-lg"
-            />
+            <div class="w-full h-64 bg-gray-950 flex items-center justify-center overflow-hidden rounded-t-lg">
+              <img
+                src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-fo.jpg"
+                alt="Foto fiber optic splicing"
+                class="h-full object-contain"
+              />
+            </div>
             <div class="p-5 flex flex-col flex-1">
               <h3 class="text-lg font-semibold text-blue-300">
                 Splicing Fiber Optic dan Penataan di Data Center
@@ -227,11 +235,13 @@
 
           <!-- RINGKASAN 5 - Dokumentasi dan Website Company Profile -->
           <article class="bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col">
-            <img
-              src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-web.jpg"
-              alt="Foto dokumentasi web"
-              class="w-full h-40 object-cover rounded-t-lg"
-            />
+            <div class="w-full h-64 bg-gray-950 flex items-center justify-center overflow-hidden rounded-t-lg">
+              <img
+                src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-web.jpg"
+                alt="Foto dokumentasi web"
+                class="h-full object-contain"
+              />
+            </div>
             <div class="p-5 flex flex-col flex-1">
               <h3 class="text-lg font-semibold text-blue-300">
                 Dokumentasi Teknis dan Website Company Profile
@@ -280,48 +290,56 @@
         <!-- GRID FOTO -->
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6">
           <!-- Foto 1 -->
-          <div class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden">
-            <img
-              src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-api.jpg"
-              alt="Foto API placeholder"
-              class="w-full h-32 object-cover"
-            />
+          <div class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden p-2">
+            <div class="w-full h-56 bg-gray-950 flex items-center justify-center rounded-md">
+              <img
+                src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-api.jpg"
+                alt="Foto API placeholder"
+                class="h-full object-contain"
+              />
+            </div>
             <div class="p-2 text-xs text-center text-blue-200">
               API - Tampak Depan
             </div>
           </div>
 
           <!-- Foto 2 -->
-          <div class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden">
-            <img
-              src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-rack.jpg"
-              alt="Foto rack placeholder"
-              class="w-full h-32 object-cover"
-            />
+          <div class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden p-2">
+            <div class="w-full h-56 bg-gray-950 flex items-center justify-center rounded-md">
+              <img
+                src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-rack.jpg"
+                alt="Foto rack placeholder"
+                class="h-full object-contain"
+              />
+            </div>
             <div class="p-2 text-xs text-center text-blue-200">
               Rack 42U - Penataan Kabel
             </div>
           </div>
 
           <!-- Foto 3 -->
-          <div class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden">
-            <img
-              src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-wmr.jpg"
-              alt="Foto WMR placeholder"
-              class="w-full h-32 object-cover"
-            />
+          <div class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden p-2">
+            <div class="w-full h-56 bg-gray-950 flex items-center justify-center rounded-md">
+              <img
+                src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-wmr.jpg"
+                alt="Foto WMR placeholder"
+                class="h-full object-contain"
+              />
+            </div>
             <div class="p-2 text-xs text-center text-blue-200">
               WMR - Instalasi Outdoor
             </div>
           </div>
 
           <!-- Foto 4 -->
-          <div class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden">
-            <img
-              src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-grounding.jpg"
-              alt="Foto grounding placeholder"
-              class="w-full h-32 object-cover"
-            />
+          <div class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden p-2">
+            <div class="w-full h-56 bg-gray-950 flex items-center justify-center rounded-md">
+              <img
+                src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-grounding.jpg"
+                alt="Foto grounding placeholder"
+                class="h-full object-contain"
+              />
+            </div>
             <div class="p-2 text-xs text-center text-blue-200">
               Grounding - Dokumentasi Keselamatan
             </div>

@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Magang Blog - Chiko Satria</title>
     <!-- Tailwind CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <!-- Optional favicon -->
     <link rel="icon" href="img/lgo.png" type="image/x-icon" />
   </head>
   <body class="bg-gray-900 text-blue-200">
     <!-- HEADER -->
-    <header class="px-5 sticky top-0 bg-gray-900 py-4 opacity-95 backdrop-blur-sm z-10 border-b border-gray-700">
+    <header
+      class="px-5 sticky top-0 bg-gray-900 py-4 opacity-95 backdrop-blur-sm z-10 border-b border-gray-700"
+    >
       <nav class="container mx-auto flex items-center justify-between">
         <div>
           <a href="index.html" class="uppercase text-lg leading-tight">
@@ -22,578 +27,885 @@
         </div>
         <div class="hidden sm:flex space-x-6 text-sm">
           <a href="#home" class="hover:text-white text-blue-400">Home</a>
-          <a href="#summary" class="hover:text-white text-blue-400">Ringkasan</a>
+          <a href="#summary" class="hover:text-white text-blue-400"
+            >Ringkasan</a
+          >
           <a href="#gallery" class="hover:text-white text-blue-400">Gallery</a>
-          <a href="#about" class="hover:text-white text-blue-400">Tentang Magang</a>
+          <a href="#about" class="hover:text-white text-blue-400"
+            >Tentang Magang</a
+          >
         </div>
         <!-- Mobile menu simple -->
         <div class="sm:hidden text-xs space-x-3">
           <a href="#home" class="hover:text-white text-blue-400">Home</a>
-          <a href="#summary" class="hover:text-white text-blue-400">Ringkasan</a>
+          <a href="#summary" class="hover:text-white text-blue-400"
+            >Ringkasan</a
+          >
         </div>
       </nav>
     </header>
+
     <!-- MAIN -->
     <main class="container mx-auto px-5 py-10 space-y-10">
       <!-- HERO / INTRO -->
-      <section id="home" class="bg-gray-800 rounded-lg shadow-lg p-8 flex flex-col lg:flex-row items-center gap-8">
+      <section
+        id="home"
+        class="bg-gray-800 rounded-lg shadow-lg p-8 flex flex-col lg:flex-row items-center gap-8"
+      >
         <!-- Foto portrait friendly -->
-        <div class="w-full lg:w-1/3 bg-gray-950 rounded-lg flex items-center justify-center p-4">
-          <img src="https://chiknwy.github.io/Magang/img/img1.jpg" alt="Magang photo placeholder" class="h-80 object-contain" />
+        <div
+          class="w-full lg:w-1/3 bg-gray-950 rounded-lg flex items-center justify-center p-4"
+        >
+          <img
+            src="https://chiknwy.github.io/Magang/img/img1.jpg"
+            alt="Magang photo placeholder"
+            class="h-80 object-contain"
+          />
         </div>
+
         <!-- Text intro -->
         <div class="w-full lg:w-2/3 text-center lg:text-left">
-          <h1 class="text-3xl md:text-4xl font-bold text-green-200"> Magang Network Engineer Support </h1>
-          <p class="mt-4 text-blue-200 text-sm md:text-base leading-relaxed"> Halaman ini berisi ringkasan kegiatan utama yang saya kerjakan selama magang yang dikelompokkan berdasarkan jenis pekerjaan. Yang digunakan sebagai referensi saat menyusun laporan kegiatan magang untuk kampus maupun kebutuhan dokumentasi perusahaan. </p>
-          <div class="mt-6 flex flex-wrap gap-3 justify-center lg:justify-start text-xs">
-            <span class="px-3 py-1 rounded-full bg-gray-900 border border-blue-400 text-blue-300"> PT Adita Nusantara Solution </span>
-            <span class="px-3 py-1 rounded-full bg-gray-900 border border-green-300 text-green-200"> Network Engineer Support </span>
-            <span class="px-3 py-1 rounded-full bg-gray-900 border border-indigo-300 text-indigo-200"> Instalasi dan Dokumentasi Jaringan </span>
+          <h1 class="text-3xl md:text-4xl font-bold text-green-200">
+            Magang Network Engineer Support
+          </h1>
+          <p class="mt-4 text-blue-200 text-sm md:text-base leading-relaxed">
+            Halaman ini berisi ringkasan kegiatan utama yang saya kerjakan
+            selama magang yang dikelompokkan berdasarkan jenis pekerjaan. Yang
+            digunakan sebagai referensi saat menyusun laporan kegiatan magang
+            untuk kampus maupun kebutuhan dokumentasi perusahaan.
+          </p>
+
+          <div
+            class="mt-6 flex flex-wrap gap-3 justify-center lg:justify-start text-xs"
+          >
+            <span
+              class="px-3 py-1 rounded-full bg-gray-900 border border-blue-400 text-blue-300"
+            >
+              PT Adita Nusantara Solution
+            </span>
+            <span
+              class="px-3 py-1 rounded-full bg-gray-900 border border-green-300 text-green-200"
+            >
+              Network Engineer Support
+            </span>
+            <span
+              class="px-3 py-1 rounded-full bg-gray-900 border border-indigo-300 text-indigo-200"
+            >
+              Instalasi dan Dokumentasi Jaringan
+            </span>
           </div>
         </div>
       </section>
+
       <!-- RINGKASAN KEGIATAN MAGANG -->
-      <section id="summary" class="bg-gray-800 rounded-lg shadow-lg p-8 space-y-6">
-        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <section
+        id="summary"
+        class="bg-gray-800 rounded-lg shadow-lg p-8 space-y-6"
+      >
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+        >
           <div>
-            <h2 class="text-2xl md:text-3xl font-bold text-green-200"> Ringkasan Kegiatan Magang </h2>
-            <p class="text-sm text-blue-300 mt-2"> Setiap card di bawah ini adalah satu ringkasan aktivitas utama selama magang. </p>
+            <h2 class="text-2xl md:text-3xl font-bold text-green-200">
+              Ringkasan Kegiatan Magang
+            </h2>
+            <p class="text-sm text-blue-300 mt-2">
+              Setiap card di bawah ini adalah satu ringkasan aktivitas utama
+              selama magang.
+            </p>
           </div>
         </div>
+
         <!-- GRID CARD RINGKASAN -->
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-4">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-4"
+        >
           <!-- RINGKASAN 1 - Terminasi dan Pengecekan Kabel -->
-          <article class="group bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col cursor-pointer
+          <article
+            class="group bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col cursor-pointer
                     transform transition-all duration-300 ease-out
-                    hover:-translate-y-1 hover:shadow-2xl hover:border-blue-400 active:scale-[0.99]">
-            <div class="card-slider w-full h-64 bg-gray-950 flex items-center justify-center overflow-hidden rounded-t-lg relative" data-interval="5000">
-              <div class="card-slider-images w-full h-full flex items-center justify-center">
-                <img src="https://chiknwy.github.io/Magang/img/patchpanel.jpg" alt="Foto terminasi kabel 1" class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-100 transition-opacity duration-500" />
-                <img src="https://chiknwy.github.io/Magang/img/patchpanel2.jpg" alt="Foto terminasi kabel 2" class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-0 transition-opacity duration-500" />
+                    hover:-translate-y-1 hover:shadow-2xl hover:border-blue-400 active:scale-[0.99]"
+          >
+            <div
+              class="card-slider w-full h-64 bg-gray-950 flex items-center justify-center overflow-hidden rounded-t-lg relative"
+              data-interval="5000"
+            >
+              <div
+                class="card-slider-images w-full h-full flex items-center justify-center"
+              >
+                <img
+                  src="https://chiknwy.github.io/Magang/img/patchpanel.jpg"
+                  alt="Foto terminasi kabel 1"
+                  class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-100 transition-opacity duration-500"
+                />
+                <img
+                  src="https://chiknwy.github.io/Magang/img/patchpanel2.jpg"
+                  alt="Foto terminasi kabel 2"
+                  class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-0 transition-opacity duration-500"
+                />
               </div>
               <!-- Overlay halus saat hover card -->
-              <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent
-                        opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div
+                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent
+                        opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
               <!-- Tombol prev next -->
-              <button class="card-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
+              <button
+                class="card-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
                         hover:bg-opacity-90 text-blue-200 rounded-full w-8 h-8 flex items-center justify-center
-                        text-xs transition-colors duration-200" aria-label="Previous image"> ‹ </button>
-              <button class="card-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
+                        text-xs transition-colors duration-200"
+                aria-label="Previous image"
+              >
+                ‹
+              </button>
+              <button
+                class="card-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
                         hover:bg-opacity-90 text-blue-200 rounded-full w-8 h-8 flex items-center justify-center
-                        text-xs transition-colors duration-200" aria-label="Next image"> › </button>
+                        text-xs transition-colors duration-200"
+                aria-label="Next image"
+              >
+                ›
+              </button>
               <!-- Dots indikator -->
-              <div class="card-dots absolute bottom-2 left-0 right-0 flex justify-center space-x-1"></div>
+              <div
+                class="card-dots absolute bottom-2 left-0 right-0 flex justify-center space-x-1"
+              ></div>
             </div>
+
             <div class="p-5 flex flex-col flex-1">
-              <h3 class="text-lg font-semibold text-blue-300 mb-1
-                        transition-colors duration-300 group-hover:text-blue-100"> Terminasi Kabel dan Pengecekan LAN Tester </h3>
-              <p class="mt-2 text-sm text-blue-200 flex-1
-                        transition-colors duration-300 group-hover:text-blue-100/90"> Melakukan terminasi kabel UTP ke socket data dan patch panel pada beberapa titik yang sudah ditandai di area kerja klien. Setelah terminasi, setiap jalur diuji dengan LAN tester menggunakan mode fault check untuk memastikan tidak ada kabel yang putus, short, atau salah pasangan. Hasil pengujian digunakan sebagai dasar bahwa titik data siap digunakan untuk koneksi jaringan klien. </p>
+              <h3
+                class="text-lg font-semibold text-blue-300 mb-1
+                        transition-colors duration-300 group-hover:text-blue-100"
+              >
+                Terminasi Kabel dan Pengecekan LAN Tester
+              </h3>
+              <p
+                class="mt-2 text-sm text-blue-200 flex-1
+                        transition-colors duration-300 group-hover:text-blue-100/90"
+              >
+                Melakukan terminasi kabel UTP ke socket data dan patch panel
+                pada beberapa titik yang sudah ditandai di area kerja klien.
+                Setelah terminasi, setiap jalur diuji dengan LAN tester
+                menggunakan mode fault check untuk memastikan tidak ada kabel
+                yang putus, short, atau salah pasangan. Hasil pengujian
+                digunakan sebagai dasar bahwa titik data siap digunakan untuk
+                koneksi jaringan klien.
+              </p>
+
               <div class="mt-4 flex flex-wrap gap-2 text-xs">
-                <span class="px-2 py-1 rounded bg-gray-800 border border-blue-500 text-blue-300
-                        transition-colors duration-300 group-hover:border-blue-300 group-hover:text-blue-100"> Terminasi </span>
-                <span class="px-2 py-1 rounded bg-gray-800 border border-red-500 text-red-300
-                        transition-colors duration-300 group-hover:border-red-300 group-hover:text-red-100"> Socket </span>
+                <span
+                  class="px-2 py-1 rounded bg-gray-800 border border-blue-500 text-blue-300
+                        transition-colors duration-300 group-hover:border-blue-300 group-hover:text-blue-100"
+                >
+                  Terminasi
+                </span>
+                <span
+                  class="px-2 py-1 rounded bg-gray-800 border border-red-500 text-red-300
+                        transition-colors duration-300 group-hover:border-red-300 group-hover:text-red-100"
+                >
+                  Socket
+                </span>
               </div>
             </div>
           </article>
+
           <!-- RINGKASAN 2 - Port Mapping dan Labeling -->
-          <article class="group bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col cursor-pointer
+          <article
+            class="group bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col cursor-pointer
                     transform transition-all duration-300 ease-out
-                    hover:-translate-y-1 hover:shadow-2xl hover:border-blue-400 active:scale-[0.99]">
-            <div class="card-slider w-full h-64 bg-gray-950 flex items-center justify-center overflow-hidden rounded-t-lg relative" data-interval="5000">
-              <div class="card-slider-images w-full h-full flex items-center justify-center">
-                <img src="https://chiknwy.github.io/Magang/img/port_mapping.jpg" alt="Foto port mapping 1" class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-100 transition-opacity duration-500" />
-                <img src="https://chiknwy.github.io/Magang/img/port_mapping2.jpg" alt="Foto port mapping 2" class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-0 transition-opacity duration-500" />
+                    hover:-translate-y-1 hover:shadow-2xl hover:border-blue-400 active:scale-[0.99]"
+          >
+            <div
+              class="card-slider w-full h-64 bg-gray-950 flex items-center justify-center overflow-hidden rounded-t-lg relative"
+              data-interval="5000"
+            >
+              <div
+                class="card-slider-images w-full h-full flex items-center justify-center"
+              >
+                <img
+                  src="https://chiknwy.github.io/Magang/img/port_mapping.jpg"
+                  alt="Foto port mapping 1"
+                  class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-100 transition-opacity duration-500"
+                />
+                <img
+                  src="https://chiknwy.github.io/Magang/img/port_mapping2.jpg"
+                  alt="Foto port mapping 2"
+                  class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-0 transition-opacity duration-500"
+                />
               </div>
-              <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent
-                        opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <button class="card-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
+              <div
+                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent
+                        opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+              <button
+                class="card-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
                         hover:bg-opacity-90 text-blue-200 rounded-full w-8 h-8 flex items-center justify-center
-                        text-xs transition-colors duration-200" aria-label="Previous image"> ‹ </button>
-              <button class="card-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
+                        text-xs transition-colors duration-200"
+                aria-label="Previous image"
+              >
+                ‹
+              </button>
+              <button
+                class="card-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
                         hover:bg-opacity-90 text-blue-200 rounded-full w-8 h-8 flex items-center justify-center
-                        text-xs transition-colors duration-200" aria-label="Next image"> › </button>
-              <div class="card-dots absolute bottom-2 left-0 right-0 flex justify-center space-x-1"></div>
+                        text-xs transition-colors duration-200"
+                aria-label="Next image"
+              >
+                ›
+              </button>
+              <div
+                class="card-dots absolute bottom-2 left-0 right-0 flex justify-center space-x-1"
+              ></div>
             </div>
+
             <div class="p-5 flex flex-col flex-1">
-              <h3 class="text-lg font-semibold text-blue-300 mb-1
-                        transition-colors duration-300 group-hover:text-blue-100"> Port Mapping dan Penyesuaian Titik Data </h3>
-              <p class="mt-2 text-sm text-blue-200 flex-1
-                        transition-colors duration-300 group-hover:text-blue-100/90"> Melakukan port mapping antara switch, patch panel, dan outlet di lapangan. Setiap port di switch dicocokkan dengan nomor outlet fisik di ruangan, terutama pada lantai basement dan lantai satu. Hasil mapping kemudian didokumentasikan dalam bentuk tabel sehingga memudahkan proses troubleshooting, pemindahan perangkat, serta pemeliharaan jaringan di kemudian hari. </p>
+              <h3
+                class="text-lg font-semibold text-blue-300 mb-1
+                        transition-colors duration-300 group-hover:text-blue-100"
+              >
+                Port Mapping dan Penyesuaian Titik Data
+              </h3>
+              <p
+                class="mt-2 text-sm text-blue-200 flex-1
+                        transition-colors duration-300 group-hover:text-blue-100/90"
+              >
+                Melakukan port mapping antara switch, patch panel, dan outlet di
+                lapangan. Setiap port di switch dicocokkan dengan nomor outlet
+                fisik di ruangan, terutama pada lantai basement dan lantai satu.
+                Hasil mapping kemudian didokumentasikan dalam bentuk tabel
+                sehingga memudahkan proses troubleshooting, pemindahan perangkat,
+                serta pemeliharaan jaringan di kemudian hari.
+              </p>
+
               <div class="mt-4 flex flex-wrap gap-2 text-xs">
-                <span class="px-2 py-1 rounded bg-gray-800 border border-blue-500 text-blue-300
-                        transition-colors duration-300 group-hover:border-blue-300 group-hover:text-blue-100"> Port Mapping </span>
-                <span class="px-2 py-1 rounded bg-gray-800 border border-green-400 text-green-200
-                        transition-colors duration-300 group-hover:border-green-300 group-hover:text-green-100"> LAN Tester </span>
+                <span
+                  class="px-2 py-1 rounded bg-gray-800 border border-blue-500 text-blue-300
+                        transition-colors duration-300 group-hover:border-blue-300 group-hover:text-blue-100"
+                >
+                  Port Mapping
+                </span>
+                <span
+                  class="px-2 py-1 rounded bg-gray-800 border border-green-400 text-green-200
+                        transition-colors duration-300 group-hover:border-green-300 group-hover:text-green-100"
+                >
+                  LAN Tester
+                </span>
               </div>
             </div>
           </article>
+
           <!-- RINGKASAN 3 - Pemasangan AP dan Konfigurasi Dasar -->
-          <!-- RINGKASAN 3 - Pemasangan AP dan Konfigurasi Dasar -->
-          <article class="group bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col cursor-pointer
+          <article
+            class="group bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col cursor-pointer
          transform transition-all duration-300 ease-out
-         hover:-translate-y-1 hover:shadow-2xl hover:border-blue-400 active:scale-[0.99]">
-            <div class="card-slider w-full h-64 bg-gray-950 flex items-center justify-center overflow-hidden rounded-t-lg relative" data-interval="5000">
-              <div class="card-slider-images w-full h-full flex items-center justify-center">
-                <img src="https://chiknwy.github.io/Magang/img/ap.jpg" alt="Foto pemasangan access point 1" class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-100 transition-opacity duration-500" />
-                <img src="https://chiknwy.github.io/Magang/img/ap2.jpg" alt="Foto pemasangan access point 2" class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-0 transition-opacity duration-500" />
+         hover:-translate-y-1 hover:shadow-2xl hover:border-blue-400 active:scale-[0.99]"
+          >
+            <div
+              class="card-slider w-full h-64 bg-gray-950 flex items-center justify-center overflow-hidden rounded-t-lg relative"
+              data-interval="5000"
+            >
+              <div
+                class="card-slider-images w-full h-full flex items-center justify-center"
+              >
+                <img
+                  src="https://chiknwy.github.io/Magang/img/ap.jpg"
+                  alt="Foto pemasangan access point 1"
+                  class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-100 transition-opacity duration-500"
+                />
+                <img
+                  src="https://chiknwy.github.io/Magang/img/ap2.jpg"
+                  alt="Foto pemasangan access point 2"
+                  class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-0 transition-opacity duration-500"
+                />
               </div>
-              <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent
-             opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <button class="card-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
+              <div
+                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent
+             opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+              <button
+                class="card-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
              hover:bg-opacity-90 text-blue-200 rounded-full w-8 h-8 flex items-center justify-center
-             text-xs transition-colors duration-200" aria-label="Previous image"> ‹ </button>
-              <button class="card-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
+             text-xs transition-colors duration-200"
+                aria-label="Previous image"
+              >
+                ‹
+              </button>
+              <button
+                class="card-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
              hover:bg-opacity-90 text-blue-200 rounded-full w-8 h-8 flex items-center justify-center
-             text-xs transition-colors duration-200" aria-label="Next image"> › </button>
-              <div class="card-dots absolute bottom-2 left-0 right-0 flex justify-center space-x-1"></div>
+             text-xs transition-colors duration-200"
+                aria-label="Next image"
+              >
+                ›
+              </button>
+              <div
+                class="card-dots absolute bottom-2 left-0 right-0 flex justify-center space-x-1"
+              ></div>
             </div>
+
             <div class="p-5 flex flex-col flex-1">
-              <h3 class="text-lg font-semibold text-blue-300 mb-1
-             transition-colors duration-300 group-hover:text-blue-100"> Pemasangan Access Point dan Pengujian Koneksi </h3>
-              <p class="mt-2 text-sm text-blue-200 flex-1
-             transition-colors duration-300 group-hover:text-blue-100/90"> Membantu pemasangan access point yang sudah terhubung ke jaringan, mulai dari penempatan perangkat pada posisi yang telah ditentukan sampai pengujian konektivitas nirkabel. Setelah pemasangan dilakukan, dilakukan pengecekan apakah SSID sudah muncul, kekuatan sinyal di area yang ditentukan sesuai, dan koneksi internet dapat diakses dengan stabil. </p>
+              <h3
+                class="text-lg font-semibold text-blue-300 mb-1
+             transition-colors duration-300 group-hover:text-blue-100"
+              >
+                Pemasangan Access Point dan Pengujian Koneksi
+              </h3>
+              <p
+                class="mt-2 text-sm text-blue-200 flex-1
+             transition-colors duration-300 group-hover:text-blue-100/90"
+              >
+                Membantu pemasangan access point yang sudah terhubung ke
+                jaringan, mulai dari penempatan perangkat pada posisi yang telah
+                ditentukan sampai pengujian konektivitas nirkabel. Setelah
+                pemasangan dilakukan, dilakukan pengecekan apakah SSID sudah
+                muncul, kekuatan sinyal di area yang ditentukan sesuai, dan
+                koneksi internet dapat diakses dengan stabil.
+              </p>
+
               <div class="mt-4 flex flex-wrap gap-2 text-xs">
-                <span class="px-2 py-1 rounded bg-gray-800 border border-green-400 text-green-200
-               transition-colors duration-300 group-hover:border-green-300 group-hover:text-green-100"> Access Point </span>
-                <span class="px-2 py-1 rounded bg-gray-800 border border-blue-500 text-blue-300
-               transition-colors duration-300 group-hover:border-blue-300 group-hover:text-blue-100"> Wireless </span>
+                <span
+                  class="px-2 py-1 rounded bg-gray-800 border border-green-400 text-green-200
+               transition-colors duration-300 group-hover:border-green-300 group-hover:text-green-100"
+                >
+                  Access Point
+                </span>
+                <span
+                  class="px-2 py-1 rounded bg-gray-800 border border-blue-500 text-blue-300
+               transition-colors duration-300 group-hover:border-blue-300 group-hover:text-blue-100"
+                >
+                  Wireless
+                </span>
               </div>
             </div>
           </article>
+
           <!-- RINGKASAN 4 - Fiber Optic dan Splicing -->
-          <article class="group bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col cursor-pointer
+          <article
+            class="group bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col cursor-pointer
          transform transition-all duration-300 ease-out
-         hover:-translate-y-1 hover:shadow-2xl hover:border-blue-400 active:scale-[0.99]">
-            <div class="card-slider w-full h-64 bg-gray-950 flex items-center justify-center overflow-hidden rounded-t-lg relative" data-interval="5000">
-              <div class="card-slider-images w-full h-full flex items-center justify-center">
-                <img src="https://chiknwy.github.io/Magang/img/splicing.jpg" alt="Foto fiber optic splicing 1" class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-100 transition-opacity duration-500" />
-                <img src="https://chiknwy.github.io/Magang/img/splicing2.jpg" alt="Foto fiber optic splicing 2" class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-0 transition-opacity duration-500" />
+         hover:-translate-y-1 hover:shadow-2xl hover:border-blue-400 active:scale-[0.99]"
+          >
+            <div
+              class="card-slider w-full h-64 bg-gray-950 flex items-center justify-center overflow-hidden rounded-t-lg relative"
+              data-interval="5000"
+            >
+              <div
+                class="card-slider-images w-full h-full flex items-center justify-center"
+              >
+                <img
+                  src="https://chiknwy.github.io/Magang/img/splicing.jpg"
+                  alt="Foto fiber optic splicing 1"
+                  class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-100 transition-opacity duration-500"
+                />
+                <img
+                  src="https://chiknwy.github.io/Magang/img/splicing2.jpg"
+                  alt="Foto fiber optic splicing 2"
+                  class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-0 transition-opacity duration-500"
+                />
               </div>
-              <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent
-             opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <button class="card-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
+              <div
+                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent
+             opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+              <button
+                class="card-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
              hover:bg-opacity-90 text-blue-200 rounded-full w-8 h-8 flex items-center justify-center
-             text-xs transition-colors duration-200" aria-label="Previous image"> ‹ </button>
-              <button class="card-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
+             text-xs transition-colors duration-200"
+                aria-label="Previous image"
+              >
+                ‹
+              </button>
+              <button
+                class="card-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
              hover:bg-opacity-90 text-blue-200 rounded-full w-8 h-8 flex items-center justify-center
-             text-xs transition-colors duration-200" aria-label="Next image"> › </button>
-              <div class="card-dots absolute bottom-2 left-0 right-0 flex justify-center space-x-1"></div>
+             text-xs transition-colors duration-200"
+                aria-label="Next image"
+              >
+                ›
+              </button>
+              <div
+                class="card-dots absolute bottom-2 left-0 right-0 flex justify-center space-x-1"
+              ></div>
             </div>
+
             <div class="p-5 flex flex-col flex-1">
-              <h3 class="text-lg font-semibold text-blue-300 mb-1
-             transition-colors duration-300 group-hover:text-blue-100"> Splicing Fiber Optic dan Penataan di Data Center </h3>
-              <p class="mt-2 text-sm text-blue-200 flex-1
-             transition-colors duration-300 group-hover:text-blue-100/90"> Membantu proses splicing fiber optic dari kabel utama ke pigtail di data center klien. Kegiatan meliputi persiapan kabel, proses fusi dengan mesin splicer, penempatan hasil splicing ke tray, dan pengaturan kabel agar rapi di dalam rack 42U. Kegiatan ini mendukung jalur backbone jaringan antar perangkat utama di data center. </p>
+              <h3
+                class="text-lg font-semibold text-blue-300 mb-1
+             transition-colors duration-300 group-hover:text-blue-100"
+              >
+                Splicing Fiber Optic dan Penataan di Data Center
+              </h3>
+              <p
+                class="mt-2 text-sm text-blue-200 flex-1
+             transition-colors duration-300 group-hover:text-blue-100/90"
+              >
+                Membantu proses splicing fiber optic dari kabel utama ke pigtail
+                di data center klien. Kegiatan meliputi persiapan kabel, proses
+                fusi dengan mesin splicer, penempatan hasil splicing ke tray, dan
+                pengaturan kabel agar rapi di dalam rack 42U. Kegiatan ini
+                mendukung jalur backbone jaringan antar perangkat utama di data
+                center.
+              </p>
+
               <div class="mt-4 flex flex-wrap gap-2 text-xs">
-                <span class="px-2 py-1 rounded bg-gray-800 border border-blue-500 text-blue-300
-               transition-colors duration-300 group-hover:border-blue-300 group-hover:text-blue-100"> Fiber Optic </span>
-                <span class="px-2 py-1 rounded bg-gray-800 border border-yellow-300 text-yellow-100
-               transition-colors duration-300 group-hover:border-yellow-200 group-hover:text-yellow-50"> Data Center </span>
+                <span
+                  class="px-2 py-1 rounded bg-gray-800 border border-blue-500 text-blue-300
+               transition-colors duration-300 group-hover:border-blue-300 group-hover:text-blue-100"
+                >
+                  Fiber Optic
+                </span>
+                <span
+                  class="px-2 py-1 rounded bg-gray-800 border border-yellow-300 text-yellow-100
+               transition-colors duration-300 group-hover:border-yellow-200 group-hover:text-yellow-50"
+                >
+                  Data Center
+                </span>
               </div>
             </div>
           </article>
+
           <!-- RINGKASAN 5 - Dokumentasi dan Website Company Profile -->
-          <article class="group bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col cursor-pointer
+          <article
+            class="group bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col cursor-pointer
          transform transition-all duration-300 ease-out
-         hover:-translate-y-1 hover:shadow-2xl hover:border-blue-400 active:scale-[0.99]">
-            <div class="card-slider w-full h-64 bg-gray-950 flex items-center justify-center overflow-hidden rounded-t-lg relative" data-interval="5000">
-              <div class="card-slider-images w-full h-full flex items-center justify-center">
-                <img src="https://chiknwy.github.io/Magang/img/web.jpg" alt="Foto dokumentasi web 1" class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-100 transition-opacity duration-500" />
-                <img src="https://chiknwy.github.io/Magang/img/web2.jpg" alt="Foto dokumentasi web 2" class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-0 transition-opacity duration-500" />
+         hover:-translate-y-1 hover:shadow-2xl hover:border-blue-400 active:scale-[0.99]"
+          >
+            <div
+              class="card-slider w-full h-64 bg-gray-950 flex items-center justify-center overflow-hidden rounded-t-lg relative"
+              data-interval="5000"
+            >
+              <div
+                class="card-slider-images w-full h-full flex items-center justify-center"
+              >
+                <img
+                  src="https://chiknwy.github.io/Magang/img/web.jpg"
+                  alt="Foto dokumentasi web 1"
+                  class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-100 transition-opacity duration-500"
+                />
+                <img
+                  src="https://chiknwy.github.io/Magang/img/web2.jpg"
+                  alt="Foto dokumentasi web 2"
+                  class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-0 transition-opacity duration-500"
+                />
               </div>
-              <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent
-             opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <button class="card-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
+              <div
+                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent
+             opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+              <button
+                class="card-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
              hover:bg-opacity-90 text-blue-200 rounded-full w-8 h-8 flex items-center justify-center
-             text-xs transition-colors duration-200" aria-label="Previous image"> ‹ </button>
-              <button class="card-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
+             text-xs transition-colors duration-200"
+                aria-label="Previous image"
+              >
+                ‹
+              </button>
+              <button
+                class="card-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
              hover:bg-opacity-90 text-blue-200 rounded-full w-8 h-8 flex items-center justify-center
-             text-xs transition-colors duration-200" aria-label="Next image"> › </button>
-              <div class="card-dots absolute bottom-2 left-0 right-0 flex justify-center space-x-1"></div>
+             text-xs transition-colors duration-200"
+                aria-label="Next image"
+              >
+                ›
+              </button>
+              <div
+                class="card-dots absolute bottom-2 left-0 right-0 flex justify-center space-x-1"
+              ></div>
             </div>
+
             <div class="p-5 flex flex-col flex-1">
-              <h3 class="text-lg font-semibold text-blue-300 mb-1
-             transition-colors duration-300 group-hover:text-blue-100"> Dokumentasi Teknis dan Website Company Profile </h3>
-              <p class="mt-2 text-sm text-blue-200 flex-1
-             transition-colors duration-300 group-hover:text-blue-100/90"> Menyusun dan merapikan isi website company profile, termasuk penyesuaian konten agar lebih informatif dan mudah dipahami oleh klien. Dokumentasi ini menjadi bukti kerja lapangan dan referensi untuk proyek berikutnya. </p>
+              <h3
+                class="text-lg font-semibold text-blue-300 mb-1
+             transition-colors duration-300 group-hover:text-blue-100"
+              >
+                Dokumentasi Teknis dan Website Company Profile
+              </h3>
+              <p
+                class="mt-2 text-sm text-blue-200 flex-1
+             transition-colors duration-300 group-hover:text-blue-100/90"
+              >
+                Menyusun dan merapikan isi website company profile, termasuk
+                penyesuaian konten agar lebih informatif dan mudah dipahami oleh
+                klien. Dokumentasi ini menjadi bukti kerja lapangan dan referensi
+                untuk proyek berikutnya.
+              </p>
+
               <div class="mt-4 flex flex-wrap gap-2 text-xs">
-                <span class="px-2 py-1 rounded bg-gray-800 border border-green-400 text-green-200
-               transition-colors duration-300 group-hover:border-green-300 group-hover:text-green-100"> Dokumentasi </span>
-                <span class="px-2 py-1 rounded bg-gray-800 border border-blue-500 text-blue-300
-               transition-colors duration-300 group-hover:border-blue-300 group-hover:text-blue-100"> Company Profile </span>
+                <span
+                  class="px-2 py-1 rounded bg-gray-800 border border-green-400 text-green-200
+               transition-colors duration-300 group-hover:border-green-300 group-hover:text-green-100"
+                >
+                  Dokumentasi
+                </span>
+                <span
+                  class="px-2 py-1 rounded bg-gray-800 border border-blue-500 text-blue-300
+               transition-colors duration-300 group-hover:border-blue-300 group-hover:text-blue-100"
+                >
+                  Company Profile
+                </span>
               </div>
             </div>
           </article>
+
           <!-- RINGKASAN 6 - Survey Kebutuhan Kabel dan WMR di PT Indoporlen -->
-          <article class="group bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col cursor-pointer
+          <article
+            class="group bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col cursor-pointer
          transform transition-all duration-300 ease-out
-         hover:-translate-y-1 hover:shadow-2xl hover:border-blue-400 active:scale-[0.99]">
-            <div class="card-slider w-full h-64 bg-gray-950 flex items-center justify-center overflow-hidden rounded-t-lg relative" data-interval="5000">
-              <div class="card-slider-images w-full h-full flex items-center justify-center">
+         hover:-translate-y-1 hover:shadow-2xl hover:border-blue-400 active:scale-[0.99]"
+          >
+            <div
+              class="card-slider w-full h-64 bg-gray-950 flex items-center justify-center overflow-hidden rounded-t-lg relative"
+              data-interval="5000"
+            >
+              <div
+                class="card-slider-images w-full h-full flex items-center justify-center"
+              >
                 <!-- Foto survey 1 -->
-                <img src="https://chiknwy.github.io/Magang/img/survey.jpg" alt="Survey lokasi PT Indoporlen" class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-100 transition-opacity duration-500" />
+                <img
+                  src="https://chiknwy.github.io/Magang/img/survey.jpg"
+                  alt="Survey lokasi PT Indoporlen"
+                  class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-100 transition-opacity duration-500"
+                />
                 <!-- Foto survey 2 -->
-                <img src="https://chiknwy.github.io/Magang/img/survey2.jpg" alt="Pengecekan rute kabel di PT Indoporlen" class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-0 transition-opacity duration-500" />
+                <img
+                  src="https://chiknwy.github.io/Magang/img/survey2.jpg"
+                  alt="Pengecekan rute kabel di PT Indoporlen"
+                  class="card-slide h-full object-contain absolute inset-0 mx-auto opacity-0 transition-opacity duration-500"
+                />
               </div>
-              <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent
-             opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div
+                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent
+             opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
               <!-- Tombol prev next -->
-              <button class="card-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
+              <button
+                class="card-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
              hover:bg-opacity-90 text-blue-200 rounded-full w-8 h-8 flex items-center justify-center
-             text-xs transition-colors duration-200" aria-label="Previous image"> ‹ </button>
-              <button class="card-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
+             text-xs transition-colors duration-200"
+                aria-label="Previous image"
+              >
+                ‹
+              </button>
+              <button
+                class="card-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70
              hover:bg-opacity-90 text-blue-200 rounded-full w-8 h-8 flex items-center justify-center
-             text-xs transition-colors duration-200" aria-label="Next image"> › </button>
+             text-xs transition-colors duration-200"
+                aria-label="Next image"
+              >
+                ›
+              </button>
               <!-- Dots indikator -->
-              <div class="card-dots absolute bottom-2 left-0 right-0 flex justify-center space-x-1"></div>
+              <div
+                class="card-dots absolute bottom-2 left-0 right-0 flex justify-center space-x-1"
+              ></div>
             </div>
+
             <div class="p-5 flex flex-col flex-1">
-              <h3 class="text-lg font-semibold text-blue-300 mb-1
-             transition-colors duration-300 group-hover:text-blue-100"> Survey Kebutuhan Kabel dan WMR di PT Indoporlen </h3>
-              <p class="mt-2 text-sm text-blue-200 flex-1
-             transition-colors duration-300 group-hover:text-blue-100/90"> Mengikuti kegiatan survey lapangan di PT Indoporlen untuk mengumpulkan data kebutuhan infrastruktur jaringan. Kegiatan meliputi pengecekan tata letak ruangan, penentuan jalur penarikan kabel dari rack ke titik data, serta perhitungan estimasi panjang kabel yang dibutuhkan. Selain itu juga dilakukan penentuan jumlah dan posisi Wireless Mobile Router (WMR) yang ideal agar area kerja memiliki cakupan sinyal yang merata dan sesuai kebutuhan operasional klien. </p>
+              <h3
+                class="text-lg font-semibold text-blue-300 mb-1
+             transition-colors duration-300 group-hover:text-blue-100"
+              >
+                Survey Kebutuhan Kabel dan WMR di PT Indoporlen
+              </h3>
+              <p
+                class="mt-2 text-sm text-blue-200 flex-1
+             transition-colors duration-300 group-hover:text-blue-100/90"
+              >
+                Mengikuti kegiatan survey lapangan di PT Indoporlen untuk
+                mengumpulkan data kebutuhan infrastruktur jaringan. Kegiatan
+                meliputi pengecekan tata letak ruangan, penentuan jalur penarikan
+                kabel dari rack ke titik data, serta perhitungan estimasi panjang
+                kabel yang dibutuhkan. Selain itu juga dilakukan penentuan jumlah
+                dan posisi Wireless Mobile Router (WMR) yang ideal agar area
+                kerja memiliki cakupan sinyal yang merata dan sesuai kebutuhan
+                operasional klien.
+              </p>
+
               <div class="mt-4 flex flex-wrap gap-2 text-xs">
-                <span class="px-2 py-1 rounded bg-gray-800 border border-blue-500 text-blue-300
-               transition-colors duration-300 group-hover:border-blue-300 group-hover:text-blue-100"> Site Survey </span>
-                <span class="px-2 py-1 rounded bg-gray-800 border border-green-400 text-green-200
-               transition-colors duration-300 group-hover:border-green-300 group-hover:text-green-100"> Perhitungan Kabel </span>
-                <span class="px-2 py-1 rounded bg-gray-800 border border-indigo-400 text-indigo-200
-               transition-colors duration-300 group-hover:border-indigo-300 group-hover:text-indigo-100"> Kebutuhan WMR </span>
+                <span
+                  class="px-2 py-1 rounded bg-gray-800 border border-blue-500 text-blue-300
+               transition-colors duration-300 group-hover:border-blue-300 group-hover:text-blue-100"
+                >
+                  Site Survey
+                </span>
+                <span
+                  class="px-2 py-1 rounded bg-gray-800 border border-green-400 text-green-200
+               transition-colors duration-300 group-hover:border-green-300 group-hover:text-green-100"
+                >
+                  Perhitungan Kabel
+                </span>
+                <span
+                  class="px-2 py-1 rounded bg-gray-800 border border-indigo-400 text-indigo-200
+               transition-colors duration-300 group-hover:border-indigo-300 group-hover:text-indigo-100"
+                >
+                  Kebutuhan WMR
+                </span>
               </div>
             </div>
           </article>
         </div>
       </section>
+
       <!-- GALLERY FOTO -->
       <section id="gallery" class="bg-gray-800 rounded-lg shadow-lg p-8">
-        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+        >
           <div>
-            <h2 class="text-2xl md:text-3xl font-bold text-green-200"> Gallery Dokumentasi </h2>
-            <p class="text-sm text-blue-300 mt-2"> Kumpulan foto API, rack, WMR, dan dokumentasi lapangan lain. Setiap foto bisa digunakan sebagai lampiran laporan magang. </p>
+            <h2 class="text-2xl md:text-3xl font-bold text-green-200">
+              Gallery Dokumentasi
+            </h2>
+            <p class="text-sm text-blue-300 mt-2">
+              Kumpulan foto API, rack, WMR, dan dokumentasi lapangan lain.
+              Setiap foto bisa digunakan sebagai lampiran laporan magang.
+            </p>
           </div>
         </div>
+
         <!-- GRID FOTO -->
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6">
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6"
+        >
           <!-- Foto 1 -->
-          <div class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden p-2">
-            <div class="w-full h-56 bg-gray-950 flex items-center justify-center rounded-md">
-              <img src="https://chiknwy.github.io/Magang/img/ap3.jpg" alt="Foto API placeholder" class="gallery-image h-full object-contain cursor-pointer" />
+          <div
+            class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden p-2"
+          >
+            <div
+              class="w-full h-56 bg-gray-950 flex items-center justify-center rounded-md"
+            >
+              <img
+                src="https://chiknwy.github.io/Magang/img/ap3.jpg"
+                alt="Foto API placeholder"
+                class="gallery-image h-full object-contain cursor-pointer"
+              />
             </div>
-            <div class="p-2 text-xs text-center text-blue-200"> API - Tampak Depan </div>
+            <div class="p-2 text-xs text-center text-blue-200">
+              API - Tampak Depan
+            </div>
           </div>
+
           <!-- Foto 2 -->
-          <div class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden p-2">
-            <div class="w-full h-56 bg-gray-950 flex items-center justify-center rounded-md">
-              <img src="https://chiknwy.github.io/Magang/img/kabel_42u.jpg" alt="Foto rack placeholder" class="gallery-image h-full object-contain cursor-pointer" />
+          <div
+            class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden p-2"
+          >
+            <div
+              class="w-full h-56 bg-gray-950 flex items-center justify-center rounded-md"
+            >
+              <img
+                src="https://chiknwy.github.io/Magang/img/kabel_42u.jpg"
+                alt="Foto rack placeholder"
+                class="gallery-image h-full object-contain cursor-pointer"
+              />
             </div>
-            <div class="p-2 text-xs text-center text-blue-200"> Rack 42U - Penataan Kabel </div>
+            <div class="p-2 text-xs text-center text-blue-200">
+              Rack 42U - Penataan Kabel
+            </div>
           </div>
+
           <!-- Foto 3 -->
-          <div class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden p-2">
-            <div class="w-full h-56 bg-gray-950 flex items-center justify-center rounded-md">
-              <img src="https://chiknwy.github.io/Magang/img/wmr.jpg" alt="Foto WMR placeholder" class="gallery-image h-full object-contain cursor-pointer" />
+          <div
+            class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden p-2"
+          >
+            <div
+              class="w-full h-56 bg-gray-950 flex items-center justify-center rounded-md"
+            >
+              <img
+                src="https://chiknwy.github.io/Magang/img/wmr.jpg"
+                alt="Foto WMR placeholder"
+                class="gallery-image h-full object-contain cursor-pointer"
+              />
             </div>
-            <div class="p-2 text-xs text-center text-blue-200"> WMR - Instalasi Outdoor </div>
+            <div class="p-2 text-xs text-center text-blue-200">
+              WMR - Instalasi Outdoor
+            </div>
           </div>
+
           <!-- Foto 4 -->
-          <div class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden p-2">
-            <div class="w-full h-56 bg-gray-950 flex items-center justify-center rounded-md">
-              <img src="https://chiknwy.github.io/Magang/img/dc.jpg" alt="Foto data cemter placeholder" class="gallery-image h-full object-contain cursor-pointer" />
+          <div
+            class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden p-2"
+          >
+            <div
+              class="w-full h-56 bg-gray-950 flex items-center justify-center rounded-md"
+            >
+              <img
+                src="https://chiknwy.github.io/Magang/img/dc.jpg"
+                alt="Foto data cemter placeholder"
+                class="gallery-image h-full object-contain cursor-pointer"
+              />
             </div>
-            <div class="p-2 text-xs text-center text-blue-200"> Data Center - Dokumentasi Data Center </div>
+            <div class="p-2 text-xs text-center text-blue-200">
+              Data Center - Dokumentasi Data Center
+            </div>
           </div>
           <!-- Tambah foto baru cukup copy salah satu blok di atas -->
         </div>
       </section>
+
       <!-- TENTANG MAGANG -->
       <section id="about" class="bg-gray-800 rounded-lg shadow-lg p-8 space-y-4">
-        <h2 class="text-2xl md:text-3xl font-bold text-green-200"> Tentang Program Magang </h2>
-        <p class="text-sm md:text-base text-blue-200 leading-relaxed"> Program magang ini berfokus pada dukungan dan pemeliharaan jaringan mulai dari instalasi fisik di lapangan sampai dokumentasi teknis. Kegiatan yang dilakukan meliputi terminasi kabel, port mapping, pemasangan access point, splicing fiber optic, serta penyiapan dokumentasi yang dibutuhkan perusahaan dan kampus. </p>
-        <p class="text-sm md:text-base text-blue-200 leading-relaxed"> Struktur halaman ini dibuat agar mudah dikembangkan. Jika ada kegiatan baru, cukup tambahkan satu card ringkasan di bagian Ringkasan Kegiatan tanpa perlu mengubah layout yang lain. Hal ini mempermudah saat memperbarui progres magang seiring berjalannya waktu. </p>
+        <h2 class="text-2xl md:text-3xl font-bold text-green-200">
+          Tentang Program Magang
+        </h2>
+        <p class="text-sm md:text-base text-blue-200 leading-relaxed">
+          Program magang ini berfokus pada dukungan dan pemeliharaan jaringan
+          mulai dari instalasi fisik di lapangan sampai dokumentasi teknis.
+          Kegiatan yang dilakukan meliputi terminasi kabel, port mapping,
+          pemasangan access point, splicing fiber optic, serta penyiapan
+          dokumentasi yang dibutuhkan perusahaan dan kampus.
+        </p>
+        <p class="text-sm md:text-base text-blue-200 leading-relaxed">
+          Struktur halaman ini dibuat agar mudah dikembangkan. Jika ada kegiatan
+          baru, cukup tambahkan satu card ringkasan di bagian Ringkasan
+          Kegiatan tanpa perlu mengubah layout yang lain. Hal ini mempermudah
+          saat memperbarui progres magang seiring berjalannya waktu.
+        </p>
       </section>
     </main>
+
     <!-- FOOTER -->
     <footer class="bg-gray-950 py-5 mt-10">
       <div class="container mx-auto text-center text-sm">
-        <p class="text-blue-200"> &copy; 2025 Chiko Satria. Magang Blog. </p>
-        <p class="text-xs text-blue-400 mt-1"> Dibuat dengan Tailwind CSS. </p>
+        <p class="text-blue-200">&copy; 2025 Chiko Satria. Magang Blog.</p>
+        <p class="text-xs text-blue-400 mt-1">Dibuat dengan Tailwind CSS.</p>
       </div>
     </footer>
-    <!-- LIGHTBOX FULLSCREEN -->
-    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden items-center justify-center">
-      <button id="lightbox-close" class="absolute top-4 right-4 text-blue-100 text-2xl bg-gray-900 bg-opacity-70 hover:bg-opacity-90 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Close"> × </button>
-      <button id="lightbox-prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70 hover:bg-opacity-90 text-blue-100 rounded-full w-10 h-10 flex items-center justify-center text-xl" aria-label="Previous"> ‹ </button>
-      <button id="lightbox-next" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70 hover:bg-opacity-90 text-blue-100 rounded-full w-10 h-10 flex items-center justify-center text-xl" aria-label="Next"> › </button>
-      <div class="flex flex-col items-center justify-center max-w-[95vw] max-h-[90vh] px-4">
-        <div class="flex-1 flex items-center justify-center w-full">
-          <img id="lightbox-image" src="" alt="" class="max-h-[80vh] max-w-[90vw] object-contain transition-transform duration-200" />
+
+    <!-- CARD DETAIL POPUP (MINI MODAL) -->
+    <div
+      id="card-modal"
+      class="fixed inset-0 bg-black bg-opacity-60 z-40 hidden items-center justify-center"
+    >
+      <div
+        id="card-modal-inner"
+        class="bg-gray-900 border border-gray-700 rounded-2xl shadow-2xl max-w-xl w-[90vw] mx-4
+               p-5 flex flex-col gap-4 transform transition-all duration-200 ease-out
+               opacity-0 scale-95"
+      >
+        <div class="flex items-start justify-between gap-3">
+          <div>
+            <h3
+              id="card-modal-title"
+              class="text-lg md:text-xl font-semibold text-blue-200"
+            >
+              Card title
+            </h3>
+            <p class="text-xs text-gray-400 mt-1">
+              Ringkasan detail aktivitas di card ini.
+            </p>
+          </div>
+          <button
+            id="card-modal-close"
+            class="shrink-0 w-8 h-8 rounded-full bg-gray-800 border border-gray-700
+                   flex items-center justify-center text-blue-100 text-lg
+                   hover:bg-gray-700 active:scale-95 transition"
+            aria-label="Tutup detail"
+          >
+            ×
+          </button>
         </div>
-        <div class="mt-4 flex items-center gap-2 text-xs text-blue-200">
-          <button id="lightbox-zoom-out" class="px-3 py-1 bg-gray-800 hover:bg-gray-700 rounded-full border border-gray-600"> − </button>
-          <button id="lightbox-zoom-reset" class="px-3 py-1 bg-gray-800 hover:bg-gray-700 rounded-full border border-gray-600"> Reset </button>
-          <button id="lightbox-zoom-in" class="px-3 py-1 bg-gray-800 hover:bg-gray-700 rounded-full border border-gray-600"> + </button>
-          <span class="ml-2 text-gray-400"> Scroll untuk zoom, panah keyboard untuk geser </span>
+
+        <div class="flex flex-col md:flex-row gap-4 items-start">
+          <div
+            class="w-full md:w-2/5 bg-gray-950 rounded-lg flex items-center justify-center p-2"
+          >
+            <img
+              id="card-modal-image"
+              src=""
+              alt=""
+              class="max-h-52 w-full object-contain rounded-md"
+            />
+          </div>
+          <p
+            id="card-modal-text"
+            class="w-full md:w-3/5 text-sm text-blue-100 leading-relaxed"
+          >
+            Deskripsi card akan muncul di sini.
+          </p>
+        </div>
+
+        <div id="card-modal-tags" class="flex flex-wrap gap-2 mt-1">
+          <!-- tag akan diisi lewat JS -->
+        </div>
+
+        <div class="flex justify-end mt-1">
+          <button
+            id="card-modal-open-lightbox"
+            class="px-3 py-1.5 text-xs rounded-full border border-blue-400 text-blue-200
+                   bg-gray-800 hover:bg-gray-700 active:scale-95 transition"
+          >
+            Lihat foto fullscreen
+          </button>
         </div>
       </div>
     </div>
+
+    <!-- LIGHTBOX FULLSCREEN -->
+    <div
+      id="lightbox"
+      class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden items-center justify-center"
+    >
+      <button
+        id="lightbox-close"
+        class="absolute top-4 right-4 text-blue-100 text-2xl bg-gray-900 bg-opacity-70 hover:bg-opacity-90 rounded-full w-10 h-10 flex items-center justify-center"
+        aria-label="Close"
+      >
+        ×
+      </button>
+
+      <button
+        id="lightbox-prev"
+        class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70 hover:bg-opacity-90 text-blue-100 rounded-full w-10 h-10 flex items-center justify-center text-xl"
+        aria-label="Previous"
+      >
+        ‹
+      </button>
+
+      <button
+        id="lightbox-next"
+        class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-70 hover:bg-opacity-90 text-blue-100 rounded-full w-10 h-10 flex items-center justify-center text-xl"
+        aria-label="Next"
+      >
+        ›
+      </button>
+
+      <div
+        class="flex flex-col items-center justify-center max-w-[95vw] max-h-[90vh] px-4"
+      >
+        <div class="flex-1 flex items-center justify-center w-full">
+          <img
+            id="lightbox-image"
+            src=""
+            alt=""
+            class="max-h-[80vh] max-w-[90vw] object-contain transition-transform duration-200"
+          />
+        </div>
+        <div class="mt-4 flex items-center gap-2 text-xs text-blue-200">
+          <button
+            id="lightbox-zoom-out"
+            class="px-3 py-1 bg-gray-800 hover:bg-gray-700 rounded-full border border-gray-600"
+          >
+            −
+          </button>
+          <button
+            id="lightbox-zoom-reset"
+            class="px-3 py-1 bg-gray-800 hover:bg-gray-700 rounded-full border border-gray-600"
+          >
+            Reset
+          </button>
+          <button
+            id="lightbox-zoom-in"
+            class="px-3 py-1 bg-gray-800 hover:bg-gray-700 rounded-full border border-gray-600"
+          >
+            +
+          </button>
+          <span class="ml-2 text-gray-400">
+            Scroll untuk zoom, panah keyboard untuk geser
+          </span>
+        </div>
+      </div>
+    </div>
+
     <!-- SLIDER + LIGHTBOX SCRIPT -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const sliders = document.querySelectorAll(".card-slider");
-        // Per card slider dengan auto slide
-        sliders.forEach(function(slider) {
-          const slides = slider.querySelectorAll(".card-slide");
-          const prevBtn = slider.querySelector(".card-prev");
-          const nextBtn = slider.querySelector(".card-next");
-          const dotsContainer = slider.querySelector(".card-dots");
-          const intervalMs = parseInt(slider.dataset.interval, 10) || 5000;
-          const card = slider.closest("article");
-          if (!slides.length) return;
-          let currentIndex = 0;
-          let dots = [];
-          // Buat dots indikator
-          if (dotsContainer) {
-            dotsContainer.innerHTML = "";
-            slides.forEach(function(_, idx) {
-              const dot = document.createElement("span");
-              dot.className = "card-dot w-2 h-2 rounded-full bg-gray-500 cursor-pointer transition-colors duration-200";
-              dot.addEventListener("click", function(e) {
-                e.stopPropagation();
-                currentIndex = idx;
-                showSlide(currentIndex);
-                resetInterval();
-              });
-              dotsContainer.appendChild(dot);
-              dots.push(dot);
-            });
-          }
-
-          function showSlide(index) {
-            slides.forEach(function(img, idx) {
-              if (idx === index) {
-                img.classList.remove("opacity-0");
-                img.classList.add("opacity-100");
-                // aktifkan pointer event hanya untuk slide yang kelihatan
-                img.classList.remove("pointer-events-none");
-                img.classList.add("pointer-events-auto");
-              } else {
-                img.classList.remove("opacity-100");
-                img.classList.add("opacity-0");
-                // matikan pointer event supaya tidak keteken
-                img.classList.remove("pointer-events-auto");
-                img.classList.add("pointer-events-none");
-              }
-            });
-            if (dots.length) {
-              dots.forEach(function(dot, idx) {
-                if (idx === index) {
-                  dot.classList.remove("bg-gray-500");
-                  dot.classList.add("bg-blue-400");
-                } else {
-                  dot.classList.remove("bg-blue-400");
-                  dot.classList.add("bg-gray-500");
-                }
-              });
-            }
-          }
-
-          function nextSlide() {
-            currentIndex = (currentIndex + 1) % slides.length;
-            showSlide(currentIndex);
-          }
-
-          function prevSlide() {
-            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-            showSlide(currentIndex);
-          }
-          let autoTimer = setInterval(nextSlide, intervalMs);
-
-          function resetInterval() {
-            clearInterval(autoTimer);
-            autoTimer = setInterval(nextSlide, intervalMs);
-          }
-          if (nextBtn) {
-            nextBtn.addEventListener("click", function(e) {
-              e.stopPropagation();
-              nextSlide();
-              resetInterval();
-            });
-          }
-          if (prevBtn) {
-            prevBtn.addEventListener("click", function(e) {
-              e.stopPropagation();
-              prevSlide();
-              resetInterval();
-            });
-          }
-          // Pause saat hover
-          slider.addEventListener("mouseenter", function() {
-            clearInterval(autoTimer);
-          });
-          slider.addEventListener("mouseleave", function() {
-            resetInterval();
-          });
-          // Data foto untuk lightbox per card
-          const groupImages = Array.from(slides).map(function(img) {
-            return {
-              src: img.src,
-              alt: img.alt
-            };
-          });
-          // Buat seluruh card bisa diklik untuk buka lightbox
-          if (card) {
-            // Biar bisa di-tab
-            card.setAttribute("tabindex", "0");
-            card.addEventListener("click", function(e) {
-              // Jangan trigger kalau yang diklik tombol prev/next
-              if (e.target.closest(".card-prev") || e.target.closest(".card-next")) {
-                return;
-              }
-              openLightbox(groupImages, currentIndex);
-            });
-            // Enter atau Space juga buka lightbox
-            card.addEventListener("keydown", function(e) {
-              if (e.key === "Enter" || e.key === " ") {
-                e.preventDefault();
-                openLightbox(groupImages, currentIndex);
-              }
-            });
-          }
-          // Tampilkan slide pertama
-          showSlide(currentIndex);
-        });
-        // LIGHTBOX LOGIC GLOBAL
-        const lightbox = document.getElementById("lightbox");
-        const lightboxImage = document.getElementById("lightbox-image");
-        const lightboxClose = document.getElementById("lightbox-close");
-        const lightboxPrev = document.getElementById("lightbox-prev");
-        const lightboxNext = document.getElementById("lightbox-next");
-        const zoomInBtn = document.getElementById("lightbox-zoom-in");
-        const zoomOutBtn = document.getElementById("lightbox-zoom-out");
-        const zoomResetBtn = document.getElementById("lightbox-zoom-reset");
-        let lbImages = [];
-        let lbIndex = 0;
-        let lbScale = 1;
-
-        function updateLightboxImage() {
-          const item = lbImages[lbIndex];
-          if (!item) return;
-          lightboxImage.src = item.src;
-          lightboxImage.alt = item.alt || "";
-          updateLightboxTransform();
-        }
-
-        function updateLightboxTransform() {
-          lightboxImage.style.transform = "scale(" + lbScale.toFixed(2) + ")";
-        }
-
-        function openLightbox(images, startIndex) {
-          lbImages = images || [];
-          lbIndex = startIndex || 0;
-          lbScale = 1;
-          updateLightboxImage();
-          lightbox.classList.remove("hidden");
-          lightbox.classList.add("flex");
-        }
-
-        function closeLightbox() {
-          lightbox.classList.add("hidden");
-          lightbox.classList.remove("flex");
-        }
-
-        function nextLightbox() {
-          if (!lbImages.length) return;
-          lbIndex = (lbIndex + 1) % lbImages.length;
-          lbScale = 1;
-          updateLightboxImage();
-        }
-
-        function prevLightbox() {
-          if (!lbImages.length) return;
-          lbIndex = (lbIndex - 1 + lbImages.length) % lbImages.length;
-          lbScale = 1;
-          updateLightboxImage();
-        }
-        if (lightboxClose) {
-          lightboxClose.addEventListener("click", function(e) {
-            e.stopPropagation();
-            closeLightbox();
-          });
-        }
-        if (lightboxNext) {
-          lightboxNext.addEventListener("click", function(e) {
-            e.stopPropagation();
-            nextLightbox();
-          });
-        }
-        if (lightboxPrev) {
-          lightboxPrev.addEventListener("click", function(e) {
-            e.stopPropagation();
-            prevLightbox();
-          });
-        }
-        if (zoomInBtn) {
-          zoomInBtn.addEventListener("click", function(e) {
-            e.stopPropagation();
-            lbScale = Math.min(lbScale + 0.25, 4);
-            updateLightboxTransform();
-          });
-        }
-        if (zoomOutBtn) {
-          zoomOutBtn.addEventListener("click", function(e) {
-            e.stopPropagation();
-            lbScale = Math.max(lbScale - 0.25, 1);
-            updateLightboxTransform();
-          });
-        }
-        if (zoomResetBtn) {
-          zoomResetBtn.addEventListener("click", function(e) {
-            e.stopPropagation();
-            lbScale = 1;
-            updateLightboxTransform();
-          });
-        }
-        // Klik di area gelap close
-        lightbox.addEventListener("click", function(e) {
-          if (e.target === lightbox) {
-            closeLightbox();
-          }
-        });
-        // Scroll untuk zoom
-        lightbox.addEventListener("wheel", function(e) {
-          if (lightbox.classList.contains("hidden")) return;
-          e.preventDefault();
-          if (e.deltaY < 0) {
-            lbScale = Math.min(lbScale + 0.1, 4);
-          } else {
-            lbScale = Math.max(lbScale - 0.1, 1);
-          }
-          updateLightboxTransform();
-        });
-        // Keyboard control (panah + A/D)
-        document.addEventListener("keydown", function(e) {
-          if (lightbox.classList.contains("hidden")) return;
-          if (e.key === "Escape") {
-            closeLightbox();
-          } else if (e.key === "ArrowRight" || e.key === "d" || e.key === "D") {
-            nextLightbox();
-          } else if (e.key === "ArrowLeft" || e.key === "a" || e.key === "A") {
-            prevLightbox();
-          }
-        });
-        // Gallery images juga bisa buka lightbox, satu per satu
-        const galleryImages = document.querySelectorAll(".gallery-image");
-        galleryImages.forEach(function(img) {
-          img.addEventListener("click", function() {
-            openLightbox([{
-              src: img.src,
-              alt: img.alt
-            }], 0);
-          });
-        });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

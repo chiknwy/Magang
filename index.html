@@ -1,11 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Tes
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magang Blog - Chiko Satria</title>
+
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Optional favicon -->
+    <link rel="icon" href="img/lgo.png" type="image/x-icon" />
+  </head>
+  <body class="bg-gray-900 text-blue-200">
+    <!-- HEADER -->
+    <header class="px-5 sticky top-0 bg-gray-900 py-4 opacity-95 backdrop-blur-sm z-10 border-b border-gray-700">
+      <nav class="container mx-auto flex items-center justify-between">
+        <div>
+          <a href="index.html" class="uppercase text-lg leading-tight">
+            <span class="font-extrabold text-blue-400">Chiko</span><br />
+            <span class="font-extralight text-indigo-500">Magang Blog</span>
+          </a>
+        </div>
+
+        <div class="hidden sm:flex space-x-6 text-sm">
+          <a href="#home" class="hover:text-white text-blue-400">Home</a>
+          <a href="#logs" class="hover:text-white text-blue-400">Log Harian</a>
+          <a href="#gallery" class="hover:text-white text-blue-400">Gallery</a>
+          <a href="#about" class="hover:text-white text-blue-400">Tentang Magang</a>
+        </div>
+
+        <!-- Mobile menu (simple, no JS, pakai anchor langsung) -->
+        <div class="sm:hidden text-xs space-x-3">
+          <a href="#home" class="hover:text-white text-blue-400">Home</a>
+          <a href="#logs" class="hover:text-white text-blue-400">Log</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container mx-auto px-5 py-10 space-y-10">
+
+      <!-- HERO / INTRO -->
+      <section
+        id="home"
+        class="bg-gray-800 rounded-lg shadow-lg p-8 flex flex-col lg:flex-row items-center gap-8"
+      >
+        <!-- Foto placeholder utama -->
+        <div class="w-full lg:w-1/3">
+          <!-- Ganti nama file sesuai isi repo kamu -->
+          <img
+            src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-hero.jpg"
+            alt="Magang photo placeholder"
+            class="w-full h-auto rounded-lg border border-gray-700"
+          />
+        </div>
+
+        <!-- Text intro -->
+        <div class="w-full lg:w-2/3 text-center lg:text-left">
+          <h1 class="text-3xl md:text-4xl font-bold text-green-200">
+            Magang - Network Engineer Support
+          </h1>
+          <p class="mt-4 text-blue-200 text-sm md:text-base leading-relaxed">
+            Ini adalah blog sederhana untuk mendokumentasikan perjalanan magang saya,
+            mulai dari kegiatan harian, troubleshooting, sampai dokumentasi teknis.
+            Setiap minggu akan dibuat satu log yang bisa dengan mudah ditambah
+            atau dihapus sesuai kebutuhan laporan kampus dan perusahaan.
+          </p>
+
+          <div class="mt-6 flex flex-wrap gap-3 justify-center lg:justify-start text-xs">
+            <span class="px-3 py-1 rounded-full bg-gray-900 border border-blue-400 text-blue-300">
+              PT Adita Nusantara Solution
+            </span>
+            <span class="px-3 py-1 rounded-full bg-gray-900 border border-green-300 text-green-200">
+              Network Engineer Support
+            </span>
+            <span class="px-3 py-1 rounded-full bg-gray-900 border border-indigo-300 text-indigo-200">
+              On site & remote
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOG HARIAN / MINGGUAN -->
+      <section
+        id="logs"
+        class="bg-gray-800 rounded-lg shadow-lg p-8 space-y-6"
+      >
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-bold text-green-200">
+              Log Kegiatan Magang
+            </h2>
+            <p class="text-sm text-blue-300 mt-2">
+              Setiap card di bawah ini representasi satu hari atau satu rentang minggu.
+              Tinggal copy paste satu card kalau mau tambah log baru.
+            </p>
+          </div>
+
+          <!-- Tag atau filter placeholder (optional) -->
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-3 py-1 rounded-full bg-gray-900 border border-gray-600">Terminasi & Labeling</span>
+            <span class="px-3 py-1 rounded-full bg-gray-900 border border-gray-600">Port Mapping</span>
+            <span class="px-3 py-1 rounded-full bg-gray-900 border border-gray-600">Dokumentasi</span>
+          </div>
+        </div>
+
+        <!-- GRID CARD LOG -->
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-4">
+
+          <!-- CARD LOG 1 -->
+          <!-- Duplicate blok ini untuk menambah card log baru -->
+          <article class="bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col">
+            <img
+              src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-terminasi.jpg"
+              alt="Foto kegiatan terminasi"
+              class="w-full h-40 object-cover rounded-t-lg"
+            />
+            <div class="p-5 flex flex-col flex-1">
+              <h3 class="text-lg font-semibold text-blue-300">
+                Minggu 1 - Terminasi & Pengecekan LAN Tester
+              </h3>
+              <p class="text-xs text-blue-400 mt-1">
+                Lokasi: Klien A • Rentang: 3 - 7 November 2025
+              </p>
+              <p class="mt-3 text-sm text-blue-200 flex-1">
+                Kegiatan fokus pada terminasi kabel di titik data yang sudah ditandai,
+                dilanjutkan pengecekan menggunakan LAN tester dengan mode fault check
+                untuk memastikan tidak ada kabel yang error. Semua titik yang diuji
+                dinyatakan aman dan siap digunakan.
+              </p>
+
+              <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                <span class="px-2 py-1 rounded bg-gray-800 border border-blue-500 text-blue-300">
+                  LAN Tester
+                </span>
+                <span class="px-2 py-1 rounded bg-gray-800 border border-green-400 text-green-200">
+                  Terminasi
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD LOG 2 -->
+          <article class="bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col">
+            <img
+              src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-portmapping.jpg"
+              alt="Foto port mapping"
+              class="w-full h-40 object-cover rounded-t-lg"
+            />
+            <div class="p-5 flex flex-col flex-1">
+              <h3 class="text-lg font-semibold text-blue-300">
+                Minggu 2 - Port Mapping Lantai Basement dan Lantai 1
+              </h3>
+              <p class="text-xs text-blue-400 mt-1">
+                Lokasi: Klien A • Rentang: 17 - 21 November 2025
+              </p>
+              <p class="mt-3 text-sm text-blue-200 flex-1">
+                Melakukan port mapping mulai dari lantai basement terlebih dahulu
+                kemudian lantai 1. Setiap port di switch dicocokkan dengan nomor
+                outlet di lapangan sehingga memudahkan proses troubleshooting dan
+                dokumentasi di kemudian hari.
+              </p>
+
+              <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                <span class="px-2 py-1 rounded bg-gray-800 border border-blue-500 text-blue-300">
+                  Port Mapping
+                </span>
+                <span class="px-2 py-1 rounded bg-gray-800 border border-indigo-400 text-indigo-200">
+                  Switch Management
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD LOG 3 -->
+          <article class="bg-gray-900 rounded-lg border border-gray-700 shadow-md flex flex-col">
+            <img
+              src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-ap.jpg"
+              alt="Foto pemasangan AP"
+              class="w-full h-40 object-cover rounded-t-lg"
+            />
+            <div class="p-5 flex flex-col flex-1">
+              <h3 class="text-lg font-semibold text-blue-300">
+                Minggu 3 - Pemasangan AP dan Splicing Fiber Optic
+              </h3>
+              <p class="text-xs text-blue-400 mt-1">
+                Lokasi: Klien A & Klien B • Rentang: 24 - 28 November 2025
+              </p>
+              <p class="mt-3 text-sm text-blue-200 flex-1">
+                Membantu pemasangan akses point yang sudah diterminasi, melakukan
+                splicing FO 8 core ke 8 pigtail di data center klien, pengecekan
+                ulang mapping port, serta membantu merapikan konten website company
+                profile di kantor.
+              </p>
+
+              <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                <span class="px-2 py-1 rounded bg-gray-800 border border-green-400 text-green-200">
+                  Access Point
+                </span>
+                <span class="px-2 py-1 rounded bg-gray-800 border border-blue-500 text-blue-300">
+                  Fiber Optic
+                </span>
+                <span class="px-2 py-1 rounded bg-gray-800 border border-yellow-300 text-yellow-100">
+                  Web Content
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tambah card baru cukup copy salah satu blok <article> di atas -->
+
+        </div>
+      </section>
+
+      <!-- GALLERY FOTO -->
+      <section
+        id="gallery"
+        class="bg-gray-800 rounded-lg shadow-lg p-8"
+      >
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-bold text-green-200">
+              Gallery Dokumentasi
+            </h2>
+            <p class="text-sm text-blue-300 mt-2">
+              Kumpulan foto API, rack, WMR, grounding, dan dokumentasi lainnya.
+              Setiap foto dapat dijadikan referensi saat menyusun laporan akhir.
+            </p>
+          </div>
+        </div>
+
+        <!-- GRID FOTO -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6">
+          <!-- Foto 1 -->
+          <div class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden">
+            <img
+              src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-api.jpg"
+              alt="Foto API placeholder"
+              class="w-full h-32 object-cover"
+            />
+            <div class="p-2 text-xs text-center text-blue-200">
+              API - Tampak Depan
+            </div>
+          </div>
+
+          <!-- Foto 2 -->
+          <div class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden">
+            <img
+              src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-rack.jpg"
+              alt="Foto rack placeholder"
+              class="w-full h-32 object-cover"
+            />
+            <div class="p-2 text-xs text-center text-blue-200">
+              Rack 42U - Penataan Kabel
+            </div>
+          </div>
+
+          <!-- Foto 3 -->
+          <div class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden">
+            <img
+              src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-wmr.jpg"
+              alt="Foto WMR placeholder"
+              class="w-full h-32 object-cover"
+            />
+            <div class="p-2 text-xs text-center text-blue-200">
+              WMR - Instalasi Outdoor
+            </div>
+          </div>
+
+          <!-- Foto 4 -->
+          <div class="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden">
+            <img
+              src="https://raw.githubusercontent.com/chiknwy/Magang/main/img/placeholder-grounding.jpg"
+              alt="Foto grounding placeholder"
+              class="w-full h-32 object-cover"
+            />
+            <div class="p-2 text-xs text-center text-blue-200">
+              Grounding - Dokumentasi Keselamatan
+            </div>
+          </div>
+
+          <!-- Tambah foto baru cukup copy salah satu blok di atas -->
+        </div>
+      </section>
+
+      <!-- TENTANG MAGANG -->
+      <section
+        id="about"
+        class="bg-gray-800 rounded-lg shadow-lg p-8 space-y-4"
+      >
+        <h2 class="text-2xl md:text-3xl font-bold text-green-200">
+          Tentang Program Magang
+        </h2>
+        <p class="text-sm md:text-base text-blue-200 leading-relaxed">
+          Program magang ini berfokus pada dukungan dan pemeliharaan jaringan
+          di lingkungan klien perusahaan. Ruang lingkup kerja mencakup terminasi
+          kabel, konfigurasi perangkat jaringan, port mapping, splicing fiber
+          optic, hingga dokumentasi teknis untuk keperluan laporan dan audit.
+        </p>
+        <p class="text-sm md:text-base text-blue-200 leading-relaxed">
+          Blog ini dibuat agar mudah disesuaikan dengan kebutuhan laporan kampus.
+          Setiap minggu atau rentang waktu tertentu dapat dibuat satu card log,
+          sehingga dosen pembimbing dapat melihat perkembangan kegiatan secara
+          terstruktur dan rapi.
+        </p>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 py-5 mt-10">
+      <div class="container mx-auto text-center text-sm">
+        <p class="text-blue-200">
+          &copy; 2025 Chiko Satria. Magang Blog.
+        </p>
+        <p class="text-xs text-blue-400 mt-1">
+          Dibuat dengan Tailwind CSS dan dokumentasi seadanya tapi niat.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

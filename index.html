@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Leak's Nights — Chiko Satria</title>
+<title>Internship Blog — Chiko Satria</title>
 <style>
   :root{
     --bg:#0E0F19;
@@ -31,13 +31,36 @@
   .back:hover{color:var(--bright)}
   .desc{max-width:600px;margin-bottom:20px}
   .badges span{display:inline-block;font-size:12px;padding:4px 10px;border:1px solid var(--border);color:var(--muted);margin:0 8px 8px 0}
+  .hero-img{border:1px solid var(--border);margin-top:24px}
+  .hero-img img{width:100%;display:block}
 
-  .video-wrap{border:1px solid var(--border);background:var(--surface)}
-  .video-wrap iframe{width:100%;aspect-ratio:16/9;display:block;border:none}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+  .card{border:1px solid var(--border);background:var(--surface)}
+  .card-img{position:relative;height:180px;overflow:hidden;background:var(--bg)}
+  .card-img .slide{position:absolute;inset:0;opacity:0;transition:opacity .4s}
+  .card-img .slide.active{opacity:1}
+  .card-img img{width:100%;height:100%;object-fit:cover;display:block}
+  .card-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.5);border:none;color:var(--text);width:26px;height:26px;cursor:pointer;z-index:2}
+  .card-prev{left:6px}.card-next{right:6px}
+  .card-dots{position:absolute;bottom:6px;left:0;right:0;display:flex;justify-content:center;gap:5px;z-index:2}
+  .card-dots span{width:5px;height:5px;border-radius:50%;background:var(--muted)}
+  .card-dots span.active{background:var(--text)}
+  .card-body{padding:16px}
+  .card-num{font-size:11px;color:var(--muted);margin-bottom:6px}
+  .card-title{color:var(--bright);font-size:15px;margin-bottom:8px}
+  .card-desc{font-size:13px;margin-bottom:10px}
+  .tags{display:flex;flex-wrap:wrap;gap:6px}
+  .tag{font-size:11px;padding:3px 8px;border:1px solid var(--border);color:var(--muted)}
 
-  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
-  .gallery img{width:100%;aspect-ratio:16/10;object-fit:cover;cursor:pointer;border:1px solid var(--border);display:block}
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+  .gallery-item{position:relative;cursor:pointer;overflow:hidden;border:1px solid var(--border);aspect-ratio:1}
+  .gallery-item img{width:100%;height:100%;object-fit:cover;display:block}
   .gallery-note{font-size:12px;color:var(--muted);margin-top:12px;text-align:right}
+
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .about-block{border:1px solid var(--border);background:var(--surface);padding:20px}
+  .about-block h3{color:var(--bright);font-size:14px;margin-bottom:10px}
+  .about-block p{font-size:14px}
 
   .lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.9);display:none;align-items:center;justify-content:center;z-index:100}
   .lightbox.open{display:flex}
@@ -50,7 +73,7 @@
 
   footer{padding:24px 0;text-align:center;color:var(--muted);font-size:13px}
 
-  @media(max-width:700px){nav{display:none}.gallery{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:700px){nav{display:none}.gallery{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -72,38 +95,122 @@
   <section>
     <div class="wrap">
       <a class="back" href="index.html#portfolio">← Back to Portfolio</a>
-      <h1>The Leak's Nights</h1>
-      <p class="desc">A first-person horror game rooted in Balinese culture. Set in a village preparing for a Calonarang performance, you play a university student who accidentally awakens the Leak — a shadow creature that haunts those who disrespect tradition. Uncover secrets, solve ritualistic puzzles, and light sacred incense to break the curse.</p>
+      <h1>Magang Blog</h1>
+      <p class="desc">Dokumentasi kegiatan magang saya di PT. Adita Nusantara Solution sebagai Network Engineer Support — mulai dari instalasi fisik di lapangan hingga dokumentasi teknis jaringan.</p>
       <div class="badges">
-        <span>~1–2 hours gameplay</span>
-        <span>First-Person Horror</span>
-        <span>Roblox Studio</span>
-        <span>Balinese Culture</span>
+        <span>PT Adita Nusantara Solution</span>
+        <span>Network Engineer Support</span>
+        <span>Instalasi & Dokumentasi</span>
+      </div>
+      <div class="hero-img"><img src="https://chiknwy.github.io/Magang/img/Pcord.jpg" alt="Internship photo"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Ringkasan Kegiatan Magang</h2>
+      <div class="grid" id="activity-grid">
+
+        <div class="card">
+          <div class="card-img" data-slides='["https://chiknwy.github.io/Magang/img/terminasi.jpg","https://chiknwy.github.io/Magang/img/terminasi2.jpg"]'></div>
+          <div class="card-body">
+            <div class="card-num">01</div>
+            <div class="card-title">Terminasi Kabel dan Crimping</div>
+            <p class="card-desc">Melakukan terminasi kabel UTP ke socket data dan patch panel, diuji dengan LAN tester mode fault check untuk memastikan tidak ada kabel putus, short, atau salah pasangan.</p>
+            <div class="tags"><span class="tag">Terminasi</span><span class="tag">Socket</span><span class="tag">LAN Tester</span></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" data-slides='["https://chiknwy.github.io/Magang/img/Pcord.jpg","https://chiknwy.github.io/Magang/img/Pcord2.jpg","https://chiknwy.github.io/Magang/img/Pcord3.jpg","https://chiknwy.github.io/Magang/img/Pcord4.jpg"]'></div>
+          <div class="card-body">
+            <div class="card-num">02</div>
+            <div class="card-title">Pembuatan Patchcord — PUSHIDROSAL</div>
+            <p class="card-desc">Membuat patchcord khusus proyek PUSHIDROSAL: pemotongan kabel UTP, penyusunan standar T568B, crimping konektor RJ-45, dan pengujian LAN tester.</p>
+            <div class="tags"><span class="tag">Patchcord</span><span class="tag">Crimping RJ45</span><span class="tag">PUSHIDROSAL</span></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" data-slides='["https://chiknwy.github.io/Magang/img/port_mapping.jpg","https://chiknwy.github.io/Magang/img/port_mapping2.jpg"]'></div>
+          <div class="card-body">
+            <div class="card-num">03</div>
+            <div class="card-title">Port Mapping dan Penyesuaian Titik Data</div>
+            <p class="card-desc">Port mapping antara switch, patch panel, dan outlet di lapangan. Setiap port dicocokkan dengan outlet fisik, didokumentasikan untuk kemudahan troubleshooting.</p>
+            <div class="tags"><span class="tag">Port Mapping</span><span class="tag">LAN Tester</span></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" data-slides='["https://chiknwy.github.io/Magang/img/survey.jpg","https://chiknwy.github.io/Magang/img/survey2.jpg"]'></div>
+          <div class="card-body">
+            <div class="card-num">04</div>
+            <div class="card-title">Survey Kebutuhan Kabel & WMR — PT Indoporlen</div>
+            <p class="card-desc">Survey lapangan: pengecekan tata letak, penentuan jalur kabel, estimasi panjang kabel, dan penentuan posisi Wireless Mobile Router untuk cakupan sinyal merata.</p>
+            <div class="tags"><span class="tag">Site Survey</span><span class="tag">Kabel</span><span class="tag">WMR</span></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" data-slides='["https://chiknwy.github.io/Magang/img/ap.jpg","https://chiknwy.github.io/Magang/img/ap2.jpg"]'></div>
+          <div class="card-body">
+            <div class="card-num">05</div>
+            <div class="card-title">Pemasangan Access Point dan Pengujian Koneksi</div>
+            <p class="card-desc">Pemasangan access point terhubung ke jaringan, pengecekan SSID, kekuatan sinyal, dan verifikasi koneksi internet stabil.</p>
+            <div class="tags"><span class="tag">Access Point</span><span class="tag">Wireless</span></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" data-slides='["https://chiknwy.github.io/Magang/img/splicing.jpg","https://chiknwy.github.io/Magang/img/splicing2.jpg"]'></div>
+          <div class="card-body">
+            <div class="card-num">06</div>
+            <div class="card-title">Splicing Fiber Optic dan Penataan Data Center</div>
+            <p class="card-desc">Splicing fiber optic dari kabel utama ke pigtail di data center: persiapan kabel, fusi dengan mesin splicer, penempatan ke tray, dan pengaturan kabel di rack 42U.</p>
+            <div class="tags"><span class="tag">Fiber Optic</span><span class="tag">Data Center</span><span class="tag">Splicing</span></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" data-slides='["https://chiknwy.github.io/Magang/img/web.jpg","https://chiknwy.github.io/Magang/img/web2.jpg"]'></div>
+          <div class="card-body">
+            <div class="card-num">07</div>
+            <div class="card-title">Dokumentasi Teknis & Website Company Profile</div>
+            <p class="card-desc">Menyusun dan merapikan isi website company profile, penyesuaian konten agar informatif. Dokumentasi sebagai bukti kerja lapangan dan referensi proyek berikutnya.</p>
+            <div class="tags"><span class="tag">Dokumentasi</span><span class="tag">Company Profile</span></div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <h2>Gameplay Video</h2>
-      <div class="video-wrap">
-        <iframe src="https://drive.google.com/file/d/1SECqz52MrwxK2gWbXLT6Y1X7HnKBl45-/preview" allow="autoplay" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <h2>Gallery & Development Stages</h2>
+      <h2>Gallery Dokumentasi</h2>
       <div class="gallery">
-        <img src="img/ssgame/ssdevelopingstage2.png" alt="Character Design">
-        <img src="img/ssgame/ss1game.png" alt="Screenshot 1">
-        <img src="img/ssgame/ss1lobby.png" alt="Lobby Screenshot">
-        <img src="img/ssgame/ssdevelopingstage1.png" alt="Dev Stage 1">
-        <img src="img/ssgame/ssdevelopingstage.png" alt="Dev Stage">
-        <img src="img/ssgame/ssdevelopingstage3.png" alt="Dev Stage 3">
+        <div class="gallery-item" data-src="https://chiknwy.github.io/Magang/img/ap3.jpg"><img src="https://chiknwy.github.io/Magang/img/ap3.jpg" alt="AP Tampak Depan"></div>
+        <div class="gallery-item" data-src="https://chiknwy.github.io/Magang/img/kabel_42u.jpg"><img src="https://chiknwy.github.io/Magang/img/kabel_42u.jpg" alt="Rack 42U"></div>
+        <div class="gallery-item" data-src="https://chiknwy.github.io/Magang/img/wmr.jpg"><img src="https://chiknwy.github.io/Magang/img/wmr.jpg" alt="WMR"></div>
+        <div class="gallery-item" data-src="https://chiknwy.github.io/Magang/img/dc.jpg"><img src="https://chiknwy.github.io/Magang/img/dc.jpg" alt="Data Center"></div>
       </div>
-      <p class="gallery-note">Click any image to view fullscreen · arrow keys to navigate</p>
+      <p class="gallery-note">Click to view fullscreen</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Tentang Program Magang</h2>
+      <div class="about-grid">
+        <div class="about-block">
+          <h3>Program Overview</h3>
+          <p>Program magang ini berfokus pada dukungan dan pemeliharaan jaringan mulai dari instalasi fisik di lapangan sampai dokumentasi teknis. Kegiatan meliputi terminasi kabel, port mapping, pemasangan access point, splicing fiber optic, serta penyiapan dokumentasi perusahaan.</p>
+        </div>
+        <div class="about-block">
+          <h3>Struktur Halaman</h3>
+          <p>Halaman ini dirancang agar mudah dikembangkan. Jika ada kegiatan baru, cukup tambahkan satu card ringkasan di bagian aktivitas tanpa mengubah layout yang lain.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -117,18 +224,46 @@
   <div class="lb-counter" id="lb-counter"></div>
 </div>
 
-<footer>© 2026 Chiko Satria. All Rights Reserved.</footer>
+<footer>© 2026 Chiko Satria. Magang Blog.</footer>
 
 <script>
+  // Activity card image sliders
+  document.querySelectorAll('.card-img').forEach(wrap => {
+    const srcs = JSON.parse(wrap.dataset.slides);
+    let cur = 0;
+    srcs.forEach((s,i) => {
+      const d = document.createElement('div');
+      d.className = 'slide' + (i===0 ? ' active' : '');
+      d.innerHTML = `<img src="${s}">`;
+      wrap.appendChild(d);
+    });
+    if (srcs.length > 1) {
+      const prev = document.createElement('button'); prev.className='card-nav card-prev'; prev.textContent='‹';
+      const next = document.createElement('button'); next.className='card-nav card-next'; next.textContent='›';
+      const dots = document.createElement('div'); dots.className='card-dots';
+      srcs.forEach((_,i) => { const dot=document.createElement('span'); if(i===0) dot.className='active'; dots.appendChild(dot); });
+      wrap.append(prev, next, dots);
+      function goTo(n){
+        wrap.children[cur].classList.remove('active'); dots.children[cur].classList.remove('active');
+        cur=(n+srcs.length)%srcs.length;
+        wrap.children[cur].classList.add('active'); dots.children[cur].classList.add('active');
+      }
+      prev.addEventListener('click', e=>{e.stopPropagation();goTo(cur-1);});
+      next.addEventListener('click', e=>{e.stopPropagation();goTo(cur+1);});
+      setInterval(() => goTo(cur+1), 4500);
+    }
+  });
+
+  // Gallery lightbox
   const lightbox = document.getElementById('lightbox');
   const lbImg = document.getElementById('lb-img');
   const lbCounter = document.getElementById('lb-counter');
-  const imgs = Array.from(document.querySelectorAll('.gallery img'));
-  const srcs = imgs.map(i => i.src);
+  const items = Array.from(document.querySelectorAll('.gallery-item'));
+  const srcs = items.map(i => i.dataset.src);
   let cur = 0;
   function openLB(i){ cur=i; lbImg.src=srcs[cur]; lbCounter.textContent=`${cur+1} / ${srcs.length}`; lightbox.classList.add('open'); }
   function moveLB(d){ cur=(cur+d+srcs.length)%srcs.length; lbImg.src=srcs[cur]; lbCounter.textContent=`${cur+1} / ${srcs.length}`; }
-  imgs.forEach((img,i) => img.addEventListener('click', () => openLB(i)));
+  items.forEach((item,i) => item.addEventListener('click', () => openLB(i)));
   document.getElementById('lb-close').addEventListener('click', () => lightbox.classList.remove('open'));
   document.getElementById('lb-prev').addEventListener('click', () => moveLB(-1));
   document.getElementById('lb-next').addEventListener('click', () => moveLB(1));
